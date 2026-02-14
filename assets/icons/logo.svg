@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <!-- Gradient for the logo -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1b4332;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a9396;stop-opacity:1" />
+    </linearGradient>
+    <!-- Waterfall flow effect -->
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#94d2bd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a9396;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle/shield shape -->
+  <circle cx="50" cy="50" r="48" fill="url(#logoGradient)" opacity="0.1"/>
+
+  <!-- Leaf shape representing growth and protection -->
+  <path d="M50 15
+           C70 15, 85 30, 85 50
+           C85 70, 70 85, 50 85
+           C30 85, 15 70, 15 50
+           C15 30, 30 15, 50 15Z"
+        fill="none"
+        stroke="url(#logoGradient)"
+        stroke-width="2.5"/>
+
+  <!-- Central leaf/water element -->
+  <path d="M50 25
+           C65 25, 75 40, 75 50
+           C75 65, 60 75, 50 75
+           C40 75, 25 65, 25 50
+           C25 40, 35 25, 50 25Z"
+        fill="url(#waterGradient)"
+        opacity="0.8"/>
+
+  <!-- Waterfall flow lines inside -->
+  <path d="M42 35 Q50 45, 42 55 Q50 65, 42 70"
+        stroke="#0d1b2a"
+        stroke-width="2"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.6"/>
+
+  <path d="M50 30 Q58 40, 50 50 Q58 60, 50 72"
+        stroke="#0d1b2a"
+        stroke-width="1.5"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.5"/>
+
+  <path d="M58 38 Q66 48, 58 58"
+        stroke="#0d1b2a"
+        stroke-width="1.5"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.4"/>
+
+  <!-- Small leaf accent at top -->
+  <path d="M50 18 C52 12, 56 10, 58 12 C56 16, 52 18, 50 18Z"
+        fill="#52b788"/>
+
+  <!-- Decorative dots representing seeds/fruits -->
+  <circle cx="22" cy="45" r="2" fill="#52b788" opacity="0.7"/>
+  <circle cx="78" cy="45" r="2" fill="#52b788" opacity="0.7"/>
+  <circle cx="50" cy="82" r="2" fill="#e9c46a" opacity="0.8"/>
+</svg>
