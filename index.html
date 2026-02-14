@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Millenium Holdings Family Trust - Managing and preserving family assets for current and future generations through transformative and sustainable investments.">
+    <meta name="keywords" content="family trust, wealth management, asset preservation, investment, beneficiaries, trustees">
+    <meta property="og:title" content="Millenium Holdings Family Trust">
+    <meta property="og:description" content="Preserving wealth. Building futures. Managing family assets for current and future generations.">
+    <meta property="og:type" content="website">
+    <title>Millenium Holdings Family Trust</title>
+    <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Millenium Holdings Family Trust",
+        "description": "A family trust established to manage and preserve family assets for current and future generations.",
+        "url": "https://milleniumholdings.github.io/"
+    }
+    </script>
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles" aria-hidden="true">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="#hero" class="logo-link" aria-label="Millenium Holdings Home">
+                    <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0d1b2a"/>
+                                <stop offset="50%" style="stop-color:#1b4332"/>
+                                <stop offset="100%" style="stop-color:#0a9396"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="48" fill="url(#logoGradient)" opacity="0.15"/>
+                        <path d="M50 20 C68 20, 80 35, 80 50 C80 68, 65 80, 50 80 C35 80, 20 68, 20 50 C20 35, 32 20, 50 20Z" fill="url(#logoGradient)" opacity="0.9"/>
+                        <path d="M42 35 Q50 45, 42 55 Q50 65, 42 72" stroke="#94d2bd" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M50 28 Q58 38, 50 50 Q58 62, 50 75" stroke="#94d2bd" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <div class="brand-text">
+                    <h1>Millenium Holdings</h1>
+                    <span class="nav-subtitle">Family Trust</span>
+                </div>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="nav-toggle-icon"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#purpose">Purpose</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content fade-in">
+            <svg class="hero-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" aria-hidden="true">
+                <defs>
+                    <linearGradient id="heroLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0d1b2a"/>
+                        <stop offset="50%" style="stop-color:#1b4332"/>
+                        <stop offset="100%" style="stop-color:#0a9396"/>
+                    </linearGradient>
+                    <linearGradient id="waterFlow" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#94d2bd"/>
+                        <stop offset="100%" style="stop-color:#0a9396"/>
+                    </linearGradient>
+                </defs>
+                <!-- Outer ring -->
+                <circle cx="50" cy="50" r="48" fill="none" stroke="url(#heroLogoGradient)" stroke-width="1" opacity="0.3"/>
+                <!-- Main leaf/water shape -->
+                <ellipse cx="50" cy="50" rx="35" ry="35" fill="url(#heroLogoGradient)"/>
+                <!-- Inner highlight -->
+                <ellipse cx="50" cy="50" rx="28" ry="28" fill="#1b4332"/>
+                <!-- Waterfall flow lines -->
+                <path d="M40 30 Q50 40, 40 50 Q50 60, 40 70" stroke="url(#waterFlow)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9">
+                    <animate attributeName="d" dur="3s" repeatCount="indefinite" values="M40 30 Q50 40, 40 50 Q50 60, 40 70;M40 32 Q50 42, 40 52 Q50 62, 40 72;M40 30 Q50 40, 40 50 Q50 60, 40 70"/>
+                </path>
+                <path d="M50 25 Q60 35, 50 45 Q60 55, 50 68" stroke="url(#waterFlow)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7">
+                    <animate attributeName="d" dur="4s" repeatCount="indefinite" values="M50 25 Q60 35, 50 45 Q60 55, 50 68;M50 28 Q60 38, 50 48 Q60 58, 50 70;M50 25 Q60 35, 50 45 Q60 55, 50 68"/>
+                </path>
+                <path d="M60 32 Q70 42, 60 52" stroke="url(#waterFlow)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+            <h2 class="hero-title">Preserving Wealth.<br>Building Futures.</h2>
+            <p class="hero-subtitle">Managing family assets for current and future generations</p>
+        </div>
+        <a href="#purpose" class="section-scroll" aria-label="Scroll to Purpose section">
+            <div class="scroll-arrow"></div>
+        </a>
+    </section>
+
+    <!-- Purpose Section -->
+    <section class="section purpose" id="purpose">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Our Mission</span>
+                <h2 class="section-title">Preserving Capital for Generations</h2>
+            </div>
+            <div class="purpose-content">
+                <div class="purpose-text fade-in">
+                    <p class="lead">The Millenium Holdings Family Trust exists to preserve and grow family capital through transformative and sustainable investments.</p>
+                    <p>We believe that true wealth extends beyond financial returns. Our approach considers the long-term impact of our decisions on family, community, and the environment.</p>
+                    <div class="purpose-values">
+                        <div class="value-item">
+                            <div class="value-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Stewardship</h4>
+                                <p>Responsible management of family assets for future generations</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Patience</h4>
+                                <p>Long-term perspective over short-term gains</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Family</h4>
+                                <p>Uniting generations through shared purpose and values</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="purpose-visual fade-in" aria-hidden="true">
+                    <div class="nature-image">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&q=80" alt="Lush rainforest landscape" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#performance" class="section-scroll" aria-label="Scroll to Performance section">
+            <div class="scroll-arrow"></div>
+        </a>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="section performance" id="performance">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">At a Glance</span>
+                <h2 class="section-title">Trust Performance</h2>
+            </div>
+            <div class="stats-grid">
+                <article class="stat-card fade-in">
+                    <div class="stat-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-value" data-value="$500 M">$0</span>
+                        <span class="stat-label">Funds Under Management</span>
+                    </div>
+                </article>
+                <article class="stat-card fade-in">
+                    <div class="stat-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                            <polyline points="17 6 23 6 23 12"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-value" data-value="$50,000">$0</span>
+                        <span class="stat-label" data-label="YTD Contributions">Year-to-Date Performance</span>
+                    </div>
+                </article>
+                <article class="stat-card fade-in">
+                    <div class="stat-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-value" data-value="+847%">0%</span>
+                        <span class="stat-label">Lifetime Performance</span>
+                    </div>
+                </article>
+            </div>
+            <p class="stats-note fade-in">Performance data as of most recent quarter. Past performance does not guarantee future results.</p>
+        </div>
+        <a href="#contact" class="section-scroll" aria-label="Scroll to Contact section">
+            <div class="scroll-arrow"></div>
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="section-header fade-in">
+                    <span class="section-badge">Get in Touch</span>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-intro">Send us a message and we'll get back to you within 3-5 business days.</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-image-wrapper fade-in">
+                        <div class="nature-image">
+                            <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&q=80" alt="Peaceful mountain waterfall" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper fade-in">
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xaqdojrz" method="POST">
+                            <!-- Spam Protection: Honeypot field (hidden from humans, catches bots) -->
+                            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
+
+                            <!-- Spam Protection: Timestamp token -->
+                            <input type="hidden" name="_timestamp" id="formTimestamp">
+
+                            <!-- Formspree configuration -->
+                            <input type="hidden" name="_to" value="office@milleniumholdings.com.au">
+                            <input type="hidden" name="_subject" value="[enquiry from website]">
+
+                            <!-- Redirect after submission -->
+                            <input type="hidden" name="_next" value="#contact">
+
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Enter your name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                                <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+                                <textarea id="message" name="message" required rows="5" placeholder="How can we help you?"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display:none">Sending...</span>
+                            </button>
+
+                            <p class="form-note">Your information will be kept confidential. Protected by spam filters.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="footerLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0d1b2a"/>
+                                <stop offset="50%" style="stop-color:#1b4332"/>
+                                <stop offset="100%" style="stop-color:#0a9396"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="48" fill="url(#footerLogoGrad)" opacity="0.15"/>
+                        <path d="M50 20 C68 20, 80 35, 80 50 C80 68, 65 80, 50 80 C35 80, 20 68, 20 50 C20 35, 32 20, 50 20Z" fill="url(#footerLogoGrad)" opacity="0.9"/>
+                        <path d="M42 35 Q50 45, 42 55 Q50 65, 42 72" stroke="#94d2bd" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M50 28 Q58 38, 50 50 Q58 62, 50 75" stroke="#94d2bd" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </svg>
+                    <div class="footer-brand-text">
+                        <h3>Millenium Holdings Family Trust</h3>
+                    </div>
+                </div>
+                <p class="footer-bottom">&copy; <span id="currentYear">2025</span> Millenium Holdings Family Trust. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav" role="navigation" aria-label="Mobile navigation">
+        <div class="mobile-nav-items">
+            <a href="#purpose" class="mobile-nav-item" data-target="purpose">
+                <svg class="mobile-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4"/>
+                    <path d="M12 8h.01"/>
+                </svg>
+                <span>Purpose</span>
+            </a>
+            <a href="#performance" class="mobile-nav-item" data-target="performance">
+                <svg class="mobile-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                    <polyline points="17 6 23 6 23 12"/>
+                </svg>
+                <span>Performance</span>
+            </a>
+            <a href="#contact" class="mobile-nav-item" data-target="contact">
+                <svg class="mobile-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
