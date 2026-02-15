@@ -452,12 +452,11 @@
         const formData = new FormData(contactForm);
         const actionUrl = contactForm.getAttribute('action');
 
-        // Check if Formspree is configured (demo mode if using placeholder)
-        const isDemoMode = actionUrl === 'https://formspree.io/f/your-form-id' ||
-                          actionUrl === 'https://formspree.io/f/xaqdojrz';
+        // Check if using placeholder form ID (demo mode)
+        const isDemoMode = actionUrl === 'https://formspree.io/f/your-form-id';
 
         if (isDemoMode) {
-            // Formspree not configured or in demo mode - simulate success
+            // Formspree not configured - show demo success
             setTimeout(function() {
                 showFormMessage(contactForm, 'Thank you for your message! We will be in touch shortly.', 'success');
                 contactForm.reset();
@@ -472,20 +471,24 @@
         fetch(actionUrl, {
             method: 'POST',
             body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
+            credentials: 'omit'
         })
         .then(function(response) {
-            if (response.ok) {
+            // Formspree redirects on success, so check for redirect or ok status
+            if (response.ok || response.redirected) {
                 showFormMessage(contactForm, 'Thank you for your message! We will be in touch shortly.', 'success');
                 contactForm.reset();
                 formStartTime = Date.now();
             } else {
-                showFormMessage(contactForm, 'There was an error sending your message. Please try again.', 'error');
+                // Try to get error details from response
+                return response.text().then(function(text) {
+                    console.error('Formspree error:', response.status, text);
+                    showFormMessage(contactForm, 'There was an error sending your message. Please try again.', 'error');
+                });
             }
         })
-        .catch(function() {
+        .catch(function(err) {
+            console.error('Formspree submission error:', err);
             showFormMessage(contactForm, 'There was an error sending your message. Please try again.', 'error');
         })
         .finally(function() {
