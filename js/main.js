@@ -452,9 +452,12 @@
         const formData = new FormData(contactForm);
         const actionUrl = contactForm.getAttribute('action');
 
-        // Check if Formspree is configured
-        if (actionUrl === 'https://formspree.io/f/your-form-id') {
-            // Formspree not configured - show demo success
+        // Check if Formspree is configured (demo mode if using placeholder)
+        const isDemoMode = actionUrl === 'https://formspree.io/f/your-form-id' ||
+                          actionUrl === 'https://formspree.io/f/xaqdojrz';
+
+        if (isDemoMode) {
+            // Formspree not configured or in demo mode - simulate success
             setTimeout(function() {
                 showFormMessage(contactForm, 'Thank you for your message! We will be in touch shortly.', 'success');
                 contactForm.reset();
